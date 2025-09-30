@@ -1,0 +1,68 @@
+/* Reset for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f; /* Navy Blue */
+  padding: 0.8rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar .logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #87cefa; /* Light blue hover */
+}
+
+/* Social Icons */
+.nav-icons a img {
+  height: 24px;
+  width: 24px;
+  margin-left: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.nav-icons a img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive: stack nav links on smaller screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .nav-icons {
+    margin-top: 0.5rem;
+  }
+}
